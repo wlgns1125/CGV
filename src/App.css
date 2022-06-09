@@ -1,38 +1,86 @@
-.App {
+.signup-container {
+  width: 100vw;
+}
+
+.signup-card {
+  margin: 50px auto;
+  width: 721px;
+  height: 529px;
+}
+
+.signup-image {
+  width: 721px;
+  height: 400px;
+  background-color: blue;
+  background-image: url('/img/signup_thumb.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-info {
+  margin: 30px auto;
+  width: 721px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signup-button {
+  margin: 30px auto;
+  text-align: center;
+  width: 285px;
+  height: 46px;
+  background-color: #f07469;
+  border-color: #fb4357;
+  line-height: 46px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.signup-button span {
+  background-color: #fb4357;
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.signupForm-container {
+  width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signupForm-header {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.signupForm-container h1 {
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  font-size: 48px;
+  font-family: cj_onlyone_new_medium;
+  line-height: 48px;
+}
+
+.signupForm-container p {
+  color: #555555;
+  font-family: cj_onlyone_new_medium;
+}
+
+.signupForm-card {
+  margin: 60px auto;
+  width: 1060px;
+  height: 647px;
+  padding: 50px;
+  border-top: 1px solid rgb(34, 34, 34);
+  background: rgb(248, 248, 248);
+}
+
+.signupForm-first-row {
+  width: 1030px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.signupForm-first-row div {
+  flex-basis: 48%;
 }
