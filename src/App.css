@@ -131,17 +131,19 @@
   display: inline-block;
   background-color: white;
   cursor: pointer;
+  margin-right: 17px;
 }
 
 .movieRow {
   width: 980px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin: 20px auto;
+  flex-wrap: wrap;
 }
 
 .movieRowCard {
+  margin: 20px 13px 80px 13px;
   width: 300px;
   height: 600px;
 }
@@ -374,6 +376,13 @@
 
 .reviewForm-container {
   width: 980px;
+  transition: 0.5s;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.reviewForm-open {
+  max-height: 200px;
 }
 
 .review-write-rate {

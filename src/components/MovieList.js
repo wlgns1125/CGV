@@ -1,7 +1,19 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import MovieRow from "./MovieRow";
+import MovieRowCard from "./MovieRowCard";
+
+
+const initData = [
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" },
+    { text: "리액트의 기초 알아보기" }
+];
 
 const MovieList = () => {
 
@@ -22,9 +34,12 @@ const MovieList = () => {
                         <span>GO</span>
                     </button>
                 </div>
-                <MovieRow />
-                <MovieRow />
-                <MovieRow />
+
+                <div className="movieRow">
+                    {initData.map((review) => (
+                        <MovieRowCard />
+                    ))}
+                </div>
             </div>
         </div>
     );

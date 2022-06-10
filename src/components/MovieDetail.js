@@ -59,22 +59,6 @@ const MovieDetail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="movieDetail-commentInfoBox">
-                    <div className="movieDetail-commentInfoBox-firstColumn">
-                        <div className="movieDetail-commentInfoBox-text">
-                            관람일 포함 7일 이내 관람평을 남기시면<span>&nbsp;CJ ONE 20P</span>가 적립됩니다.
-                        </div>
-                        <div className="movieDetail-commentInfoBox-count">
-                            <strong>1</strong><span>명의 실관람객이 평가해주셨습니다.</span>
-                        </div>
-                    </div>
-                    <div className="movieDetail-commentInfo-redBtn">
-                        평점작성
-                    </div>
-                    <div className="movieDetail-commentInfo-blackBtn">
-                        내 평점
-                    </div>
-                </div>
                 <div>
                     <Review />
                 </div>
