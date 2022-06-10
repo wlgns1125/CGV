@@ -199,7 +199,7 @@
   color: #666666;
 }
 
-.score > span {
+.score>span {
   color: #666666;
 }
 
@@ -214,6 +214,7 @@
 }
 
 .egg {
+  margin-top: -4px;
   margin-right: 2px;
   width: 18px;
   height: 26px;
@@ -238,4 +239,245 @@
   color: white;
   background-color: #fb4357;
   border-radius: 5px;
+}
+
+.movieDetail-container {
+  width: 100vw;
+}
+
+.movieDetail-contentBox {
+  width: 980px;
+  margin: 50px auto;
+  /* border: 1px black solid; */
+}
+
+.movieDetail-infoBox {
+  display: flex;
+  flex-direction: row;
+  height: 260px;
+}
+
+.movieDetail-infoBox img {
+  width: 185px;
+}
+
+.movieDetail-infoText {
+  margin-left: 30px;
+  flex-basis: 100%;
+}
+
+
+.movieDetail-title {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.movieDetail-title h3 {
+  color: #1a1919;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.movieDetail-status {
+  padding: 0 5px 0 5px;
+  text-align: center;
+  border: 2px solid #3e82a4;
+  color: #3e82a4;
+  font-size: 20px;
+  margin-left: 30px;
+  line-height: 30px;
+  font-weight: 550;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.movieDetail-englishTitle {
+  display: inline-block;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.movieDetail-hr {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.movieDetail-spec {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 550;
+  margin-bottom: 25px;
+}
+
+.movieDetail-commentInfoBox {
+  margin: 30px 0 30px 0;
+  padding: 30px;
+  background-color: #F6F6F6;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.movieDetail-commentInfoBox-text {
+  font-size: 20px;
+  color: #212224;
+  line-height: 1.8em;
+  font-weight: 550;
+}
+
+.movieDetail-commentInfoBox-text span {
+  color: #fb4357;
+}
+
+.movieDetail-commentInfoBox-count {
+  margin-top: 4px;
+}
+
+.movieDetail-commentInfoBox-count span {
+  color: #666666;
+  font-weight: 400;
+}
+
+.movieDetail-commentInfoBox-count strong {
+  color: #1a1919;
+}
+
+.movieDetail-commentInfo-redBtn {
+  width: 110px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  background-color: #fb4357;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movieDetail-commentInfo-blackBtn {
+  margin-left: 10px;
+  width: 110px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  background-color: #666666;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movieDetail-commentInfoBox-firstColumn {
+  margin-right: 80px;
+}
+
+.reviewForm-container {
+  width: 980px;
+}
+
+.review-write-rate {
+  border: #666666 solid;
+  width: 60px;
+  height: 30px;
+}
+
+.review-write-input {
+  margin-top: 5px;
+  border: #666666 solid;
+  border-radius: 4px;
+}
+
+.review-write-button {
+  margin-left: 5px;
+  width: 50px;
+  height: 30px;
+  color: white;
+  background-color: #666666;
+  border: none;
+  border-radius: 5px;
+}
+
+.reviewForm {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.reviewForm label {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.reviewList-container {
+  border-top: #ddd solid 1px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 980px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.reviewItem-container {
+  box-sizing: border-box;
+  width: 490px;
+  border-bottom: 1px #ddd solid;
+}
+
+.reviewList-container > div:nth-child(2n-1) {
+  border-right: 1px #ddd solid;;
+}
+
+.reviewItem-thumb {
+  width: 62px;
+  height: 62px;
+  margin-right: 20px;
+}
+
+.reviewItem-thumb img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.reviewItem-firstRow {
+  margin-left: 15px;
+  margin-top: 20px;
+  display: flex;
+  height:100px;
+}
+
+.reviewItem-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewItem-header > span {
+  font-weight: 400;
+  color: #666;
+  margin-left: 8px;
+}
+
+.reviewItem-userInfo {
+  flex-basis: 100%;
+}
+
+.reviewItem-userInfo > p {
+  margin-top: 13px;
+  font-weight: 550;
+}
+
+.reviewItem-bar {
+  margin: 0 8px 0 8px;
+}
+
+.reviewItem-secondRow {
+  margin-left: 90px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.reviewItem-secondRow img {
+  margin-right: 8px;
 }

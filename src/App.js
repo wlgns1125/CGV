@@ -3,6 +3,7 @@ import Signup from './components/Signup';
 import { Routes, Route } from "react-router-dom";
 import SignupForm from './components/SignupForm';
 import MovieList from './components/MovieList';
+import MovieDetail from './components/MovieDetail';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/movieList' element={<MovieList />} />
+        <Route path='/movieDetail' element={<MovieDetail />} />
       </Routes>
     </>
   );

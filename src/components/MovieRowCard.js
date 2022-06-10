@@ -9,7 +9,9 @@ const MovieRowCard = () => {
             <div className="movieCard-header">
                 <strong>No.1</strong>
             </div>
-            <img className="movieCard-image" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85689/85689_320.jpg" />
+            <Link to="/movieDetail">
+                <img className="movieCard-image" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85689/85689_320.jpg" />
+            </Link>
             <div className="movieCard-footer">
                 <strong className="footer-title">쥬라기 월드-도미니언</strong>
                 <div class="score">
