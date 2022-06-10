@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const SignupForm = () => {
 
@@ -12,11 +13,25 @@ const SignupForm = () => {
             <div className="signupForm-card">
                 <div className="signupForm">
                     <div>
-                        <h3>회원 가입</h3>
+                        <h3>아이디</h3>
+                        <input type="text" /> <button>중복 체크</button>
                     </div>
                     <div>
-                        호야무
+                        <h3>비밀번호</h3>
+                        <input type="password" />
                     </div>
+                    <div>
+                        <h3>비밀번호 확인</h3>
+                        <input type="password" />
+                    </div>
+                    <div>
+                        <h3>이름</h3>
+                        <input type="text" />
+                    </div>
+                    <div className="signupForm-signupButton">회원 가입하기</div>
+                    <Link to="/loginForm">
+                        <div className="signupForm-loginButton">로그인 하기</div>
+                    </Link>
                 </div>
             </div>
         </div>
