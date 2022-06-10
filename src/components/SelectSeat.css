@@ -1,0 +1,87 @@
+.seat {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.clicked {
+    background-color: red;
+    color: white;
+}
+
+.seat-wrapper{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.box{
+    border: solid 2px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.select-num{
+    text-align: center;
+}
+
+.left-box{
+    margin-top: 10px;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+}
+
+.right-box{
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+
+.screen {
+    width: 50%;
+    height: 25px;
+    margin: 0 auto;
+    line-height: 25px;
+    text-align: center;
+    background: url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/step2/screen_bg.png) repeat-x left;
+}
+
+.col{
+    width: 20px;
+    border: none;
+    background: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.toggle3 input[type=radio]{
+    display: none;
+}
+.toggle3 input[type=radio] + label {
+    margin-right: 10px;
+    background-color: white;
+    color: #000;
+    font-size: 20px;
+}
+.toggle3 input[type=radio]:checked + label {
+    background-color: black;
+    color: white;
+}

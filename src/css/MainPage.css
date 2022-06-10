@@ -1,0 +1,402 @@
+.movieChartScreen {
+    /* clear: none; */
+    float: none;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));
+}
+.swiper-wrapper {
+    transform: translate3d(0px,0px,0px);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    width: 170.4px;
+    margin-right: 70px;
+}
+
+div {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+.contents {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.movieChartScreen {
+    overflow: hidden;
+    margin-left: -30px;
+    padding: 50px 30px 60px;
+}
+
+
+
+.movieChart_list.swiper {
+    overflow: visible;
+    position: relative;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.movieChart_list .swiper-wrapper {
+    counter-reset: movie-chart-counter;
+}
+
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.movieChart_list .swiper-wrapper .swiper-slide .img_wrap {
+    overflow: hidden;
+    position: relative;
+    width: 170px;
+    height: 234px;
+    border-radius: 10px;
+}
+
+.movieChart_list .swiper-wrapper .swiper-slide .img_wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.85));
+    z-index: 2;
+}
+
+.movieChart_list .swiper-wrapper .swiper-slide .img_wrap:after {
+    content: counter(movie-chart-counter);
+    counter-increment: movie-chart-counter;
+    position: absolute;
+    left: 9px;
+    bottom: -4px;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1em;
+    z-index: 3;
+    text-shadow: 2px 5px 5px rgb(0 0 0 / 45%);
+}
+
+.movieChart_list .swiper-wrapper .swiper-slide .img_wrap img {
+    z-index: 1;
+}
+
+
+.img_wrap > img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(0, -50%);
+    vertical-align: middle;
+
+}
+
+img {
+ 
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+.movieChart_list .swiper-button-next {
+    overflow: hidden;
+    right: -20px;
+    top: calc(50% - 26px);
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.swiper-button-next {
+    left :auto;
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+.movieChart_list .swiper-button-next:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8) url(https://img.cgv.co.kr/R2014/images/common/ico/arrowL.png) center/9px 13px scroll no-repeat;
+    transform: rotate(-180deg);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+
+.EventList-container {
+    padding: 60px 0 6px;
+}
+
+
+.EventList {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.eventRow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 19px;
+    margin-left: -30px;
+    padding: 0 30px;
+}
+
+.eventRowCard {
+    width: 310.667px;
+    margin-right: 24px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.EventCardImage {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.EventList-container .swiper-button-next {
+    overflow: hidden;
+    right: 150px;
+    top: calc(50% - 26px);
+    width: 40px;
+    height:40px;
+    margin-top: +250px;
+    font-size: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.swiper-button-next {
+    left :auto;
+    position: absolute;
+    top: 25%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+.EventList-container .swiper-button-next:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8) url(https://img.cgv.co.kr/R2014/images/common/ico/arrowL.png) center/9px 13px scroll no-repeat;
+    transform: rotate(-180deg);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+div[class^="sect-"] {
+    clear: both;
+    zoom: 1;
+}
+
+iframe {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+
+}
+
+div[class^="sect-"]:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+footer .policy_list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+footer .company_info_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+}
+
+footer .company_info_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+}
+
+footer .familysite_wrap {
+    position: relative;
+}
+
+section {
+    display: block;
+}
+
+.company_info .company_info_list {
+    display: flex;
+}
+.company_info address {
+    font-style: normal;
+}
+
+dt {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+.company_info .company_info_list dt:after {
+    content: ':';
+    padding: 0 4px;
+}
+
+dd {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+optgroup {
+    font-weight: bolder;
+    display: block;
+}
+
+footer .familysite_wrap select {
+    position: relative;
+    height: 34px;
+    font-size: 12px;
+    color: #666;
+    line-height: 34px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+}
+
+footer .familysite_wrap .btn_familysite {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 34px;
+    margin-left: -1px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.429em;
+    background-color: #9e9e9e;
+    vertical-align: top;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
