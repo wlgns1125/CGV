@@ -177,7 +177,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path='/' element={[<MovieChard />, <Event />]} />
+        <Route path='/' element={[<MovieChard movieList={movieList} setClickedMenu={setClickedMenu} />, <Event />]} />
       </Routes>
       <Routes>
         <Route path='/signup' element={<Signup />} />
