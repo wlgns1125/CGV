@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ReviewForm from "./ReviewForm";
 import Review from "./Review";
 
-const MovieDetail = ({ clickedMenu }) => {
+const MovieDetail = ({ clickedMenu, commentList }) => {
 
     return (
         <div className="movieDetail-container">
@@ -52,7 +52,7 @@ const MovieDetail = ({ clickedMenu }) => {
                     </div>
                 </div>
                 <div>
-                    <Review />
+                    <Review movie={clickedMenu}  commentList={commentList} />
                 </div>
             </div>
         </div>

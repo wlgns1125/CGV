@@ -754,3 +754,7 @@
 .movieDetail-commentInfoBox-firstColumn {
   margin-right: 80px;
 }
+
+.cursorImage {
+  cursor: pointer;
+}
