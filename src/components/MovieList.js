@@ -3,19 +3,9 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import MovieRowCard from "./MovieRowCard";
 
+let selectedValue = 0;
 
-const initData = [
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" }
-];
-
-const MovieList = () => {
+const MovieList = (props) => {
 
     return (
         <div className="movieList-container">
@@ -24,20 +14,29 @@ const MovieList = () => {
                     <h3>무비차트</h3>
                 </div>
                 <div className="movieList-selectSorting">
-                    <label for="order_type">정렬</label>
-                    <select id="order_type" name="order-type">
-                        <option title="현재 선택됨" selected value="1">예매율순</option>
-                        <option value="2">평점순</option>
-                        <option value="3">관람객순</option>
+                    <select id="sortSelect" onChange={(target) => {
+                        var langSelect = document.getElementById("sortSelect");
+                        var ss = langSelect.options[langSelect.selectedIndex].value;
+                        selectedValue = ss;
+                        console.log(selectedValue);
+                    }} name="order-type">
+                        <option title="현재 선택됨" selected value="0">평점순</option>
+                        <option value="1">예매율순</option>
                     </select>
-                    <button type="button" className="movieList-sortButton">
+                    <button type="button" className="movieList-sortButton"
+
+                        onClick={
+                            (e) => {
+                                props.setSortState(selectedValue);
+                            }
+                        }>
                         <span>GO</span>
                     </button>
                 </div>
 
                 <div className="movieRow">
-                    {initData.map((review) => (
-                        <MovieRowCard />
+                    {props.sortIndexList.map((movieIndex, index) => (
+                        <MovieRowCard movie={props.movieList[movieIndex]} index={index} setClickedMenu={props.setClickedMenu} />
                     ))}
                 </div>
             </div>
