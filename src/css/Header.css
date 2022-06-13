@@ -9,10 +9,10 @@
   }
 
 @media (min-width: 900px){
-  .container .dropdownLabel {
+  .container3 .dropdownLabel {
     visibility: hidden;
   }
-  .container .dropdownLabel :target{
+  .container3 .dropdownLabel :target{
     visibility:  visible;
 }
 }
