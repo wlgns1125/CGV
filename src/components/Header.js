@@ -1,10 +1,33 @@
 import "../css/Header.css";
 import { useState } from "react";
+function openNav() {
+    let sidebar = document.querySelector(".side_nav");
+    sidebar.classList.add("display_sidebar");
+}
+
+function closeNav() {
+    let sidebar = document.querySelector(".side_nav");
+    sidebar.classList.remove("display_sidebar");
+}
+
 
 function Header() {
   return(
+      <div>
+     <div class="side_nav">
+        <span class="closebtn">&times;</span>
+        <a href="#">옵션</a>
+        <a href="#">가전</a>
+        <a href="#">가구</a>
+        <a href="#">캠핑용품</a>
+   
+    <span class="openbtn">&#9776; open</span>
+    </div>
+
+
+
       <div class ="header">
-          <div class = "header_content">
+              <div class = "header_content">
               <div class = "contents">
                     <h1 onclick>
                         <a href ="/">
@@ -59,6 +82,7 @@ function Header() {
               </div>
           </div>
 
+      </div>
       </div>
   );
 }
