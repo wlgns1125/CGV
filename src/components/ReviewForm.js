@@ -3,7 +3,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import { useState, useCallback } from "react";
 
-let selectedValue = 0;
+let selectedValue = '5.0';
 
 const ReviewForm = ({ onInsert }) => {
 
