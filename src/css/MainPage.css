@@ -1,7 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 .movieChartScreen {
     /* clear: none; */
     float: none;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));
+    margin: 0 auto;
+    min-width: 480px;
+    min-height: 480px;
 }
 .swiper-wrapper {
     transform: translate3d(0px,0px,0px);
@@ -29,12 +35,13 @@ div {
     word-break: break-all;
 }
 
+
 .contents {
-    width: 980px;
+    max-width: 980px;
     height: 100%;
     margin: 0 auto;
-}
 
+}
 .movieChartScreen {
     overflow: hidden;
     margin-left: -30px;
@@ -60,15 +67,29 @@ div {
 
 .movieChart_list .swiper-wrapper {
     counter-reset: movie-chart-counter;
+    display : flex;
+    flex-wrap: wrap;
+
+
+}
+
+@media(max-width: 700px){
+.swiper-slide {
+    flex: 0 1 calc(50% - 10px); /* - 2 x 5px left & right margin */
+    margin-bottom: 10px;
+}
 }
 
 
 .swiper-slide {
+    flex: 1;
     flex-shrink: 0;
     height: 100%;
     position: relative;
     transition-property: transform;
+    margin-bottom: 30px;
 }
+
 
 .movieChart_list .swiper-wrapper .swiper-slide .img_wrap {
     overflow: hidden;
@@ -106,7 +127,18 @@ div {
 }
 
 .movieChart_list .swiper-wrapper .swiper-slide .img_wrap img {
-    z-index: 1;
+    z-index: 3;
+}
+
+.img_wrap a {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(0, -50%);
+    vertical-align: middle;
+    
 }
 
 
@@ -118,6 +150,7 @@ div {
     height: auto;
     transform: translate(0, -50%);
     vertical-align: middle;
+    cursor: pointer;
 
 }
 
@@ -130,6 +163,7 @@ img {
     border: 0;
     vertical-align: baseline;
     word-break: break-all;
+   
 }
 
 .movieChart_list .swiper-button-next {
