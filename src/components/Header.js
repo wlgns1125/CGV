@@ -1,6 +1,5 @@
 import "../css/Header.css";
 import { useState } from "react";
-import { FaAngleDown } from "react-icons/fa";
 
 function Header() {
     const [isOpen, setMenu] = useState(false);  // 메뉴의 초기값을 false로 설정
