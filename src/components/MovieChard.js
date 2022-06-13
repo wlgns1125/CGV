@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 function MovieChard() {
 
-
     return (
         <Link to="/movieDetail" >
             <div class="movieChartScreen">

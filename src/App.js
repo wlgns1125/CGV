@@ -1,4 +1,5 @@
 import './App.css';
+import '../src/css/Header.css'
 import Signup from './components/Signup';
 import { Routes, Route } from "react-router-dom";
 import SignupForm from './components/SignupForm';
@@ -163,6 +164,7 @@ const sortIndexList = [
   [0, 1, 2, 3, 4, 5, 6, 7], // 평점순
   [2, 4, 3, 5, 1, 0, 6, 7] // 예매율순
 ];
+
 
 
 
