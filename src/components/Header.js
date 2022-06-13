@@ -1,6 +1,6 @@
 import "../css/Header.css";
 import { useState } from "react";
-import { FaAngleDown } from "react-icons/fa";
+
 
 function Header() {
     const [isOpen, setMenu] = useState(false);  // 메뉴의 초기값을 false로 설정
@@ -12,7 +12,7 @@ function Header() {
   return(
       <div>
         
-      <div className="container">
+      <div className="container3">
         <input id="dropdown" type="checkbox" />
         <label className="dropdownLabel" for="dropdown">
           <span className="menuBar">&#9776;</span>
