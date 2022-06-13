@@ -4,6 +4,14 @@
     text-align: center;
 }
 
+.seat_reserved {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #bbb;
+    pointer-events: none;
+}
+
 .clicked {
     background-color: red;
     color: white;
@@ -15,7 +23,7 @@
     margin-bottom: 50px;
 }
 
-.container{
+.container2{
     width: 80%;
     margin: 0 auto;
 }
@@ -52,6 +60,22 @@
     margin-top: 10px;
     width: 50%;
     text-align: center;
+}
+
+.tnb .btn-right2{
+    position:absolute;
+    top:10px;
+    right:0;
+    width:106px;
+    height:108px;
+}
+
+
+.tnb .btn-right2{
+    background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/tnb/tnb_buttons.png) no-repeat;
+    background-position: -150px -330px;
+    overflow:hidden;
+    text-indent:-1000px;
 }
 
 
