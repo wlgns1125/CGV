@@ -6,14 +6,14 @@ const MovieRowCard = ({ movie, index, setClickedMenu }) => {
 
     return (
         <div className="movieRowCard"
-        onClick={
-            (e) => {
-                console.log(index + '선택하였음');
-                setClickedMenu(index);
-            }
-        }>
+            onClick={
+                (e) => {
+                    console.log(index + '선택하였음');
+                    setClickedMenu(movie.index);
+                }
+            }>
             <div className="movieCard-header">
-                <strong>NO.{index+1}</strong>
+                <strong>NO.{index + 1}</strong>
             </div>
             <Link to="/movieDetail">
                 <img className="movieCard-image" src={movie.poster} />
@@ -29,9 +29,11 @@ const MovieRowCard = ({ movie, index, setClickedMenu }) => {
                     </div>
                 </div>
                 <span className="date">{movie.date}</span><span className="date ticketingPercent">개봉</span>
-                <div className="movieCard-button">
-                    예매하기
-                </div>
+                <Link to="/reserve">
+                    <div className="movieCard-button">
+                        예매하기
+                    </div>
+                </Link>
             </div>
         </div>
     );

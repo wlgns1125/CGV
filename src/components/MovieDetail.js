@@ -46,13 +46,15 @@ const MovieDetail = ({ clickedMenu, commentList }) => {
                                 <span>{clickedMenu.date}</span>
                             </div>
                         </div>
-                        <div className="movieCard-button">
-                            예매하기
-                        </div>
+                        <Link to="/reserve">
+                            <div className="movieCard-button">
+                                예매하기
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div>
-                    <Review movie={clickedMenu}  commentList={commentList} />
+                    <Review movie={clickedMenu} commentList={commentList} />
                 </div>
             </div>
         </div>

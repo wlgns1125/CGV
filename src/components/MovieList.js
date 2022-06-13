@@ -28,6 +28,7 @@ const MovieList = (props) => {
                         onClick={
                             (e) => {
                                 props.setSortState(selectedValue);
+                                console.log(props.sortIndexList);
                             }
                         }>
                         <span>GO</span>
