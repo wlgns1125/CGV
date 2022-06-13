@@ -13,9 +13,9 @@ function MovieChard() {
                         <div class = "swiper-wrapper">
                             <div class = "swiper-slide">
                                 <div class ="img_wrap" data-scale="false">
-                                        <a href="">
+                                       
                                       <img src ="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85829/85829_320.jpg" />
-                                      </a>
+                                     
                                 
                                 </div>
                             </div>

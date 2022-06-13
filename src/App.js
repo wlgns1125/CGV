@@ -1,4 +1,5 @@
 import './App.css';
+import '../src/css/Header.css'
 import Signup from './components/Signup';
 import { Routes, Route } from "react-router-dom";
 import SignupForm from './components/SignupForm';
@@ -12,6 +13,7 @@ import Header from './components/Header';
 import Foot from './components/Foot';
 import Event from './components/Event';
 import MovieChard from './components/MovieChard';
+
 
 function App() {
   return (
