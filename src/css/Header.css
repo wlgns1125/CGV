@@ -1,7 +1,62 @@
-.header {
+@media (min-width: 700px) {
+.side_nav {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background-color: #03c75a;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    padding-top: 2.3rem;
+    transition-duration: 0.3s;
+    border-radius: 0 2% 0 0;
+    visibility: hidden;
+}
+.side_nav:target {
+    visibility: visible;
+}
+}
+
+.side_nav a, .closebtn {
+    color: white;
+    display: inline;
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 1rem;
+    font-weight: 800;
+}
+
+.display_sidebar {
+    left: 0;
+}
+
+.openbtn {
+    font-size: 30px;
+}
+
+.openbtn, .closebtn {
+    cursor: pointer;
+}
+
+.side_nav .closebtn {
+    position: absolute;
+    top: -0.5rem;
+    right: 1rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+@media (max-width: 700px){
+    .header .header_content {
     position: relative;
     z-index: 101;
+    visibility: hidden;
+    }
+    .header:target{
+        visibility: visible;
+    }
 }
+
 
 div {
     font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
