@@ -6,7 +6,7 @@ function SelectSeat(){
     
     return (
         <>
-            <div class="container">
+            <div class="container_">
                 <div class="head">
                         인원/좌석
                 </div>

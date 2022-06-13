@@ -6,7 +6,7 @@ import MovieList from './components/MovieList';
 import MovieDetail from './components/MovieDetail';
 import LoginForm from './components/LoginForm';
 import TimeTableList from './components/TimetableList';
-import Ticket_tnb from './components/Ticket_Tnb';
+import Reserve from './components/Reserve';
 import SelectSeat from './components/SelectSeat';
 import Header from './components/Header';
 import Foot from './components/Foot';
@@ -31,7 +31,8 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/timeTable' element={<TimeTableList />} />
-        <Route path='/ticketing/seats' element={<SelectSeat />} />
+        <Route path='/reserve' element={<Reserve />} />
+        <Route path='/selectSeat' element={<SelectSeat />} />
       </Routes>
       <Foot />
     </>

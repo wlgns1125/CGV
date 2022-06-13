@@ -1,0 +1,134 @@
+.container {
+    width: 60%;
+    height: 560px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(201, 200, 200);
+    margin: 0 auto;
+    display: flex;
+}
+
+.movie-container{
+    width: 100%;
+    height: 100%;
+    margin-right: 3px;
+}
+
+.time-container{
+    width: 100%;
+    height: 100%;
+}
+
+.movie-head, .time-head{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+    margin-right: 3px;
+}
+
+.movie-body, .time-body{
+    height: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.movie{
+    
+    height: 200px;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: black;
+}
+
+#toggle3-1{
+    background-color: blue;
+}
+
+.time{
+    display: none;
+    color: black;
+}
+
+.btn-right{
+    background-color: red;
+    /* display: none; */
+    
+}
+
+
+#ticket_tnb { position: relative; width: 100%; min-width:996px; height: 128px; background-color:#1d1d1c; }
+
+.tnb{margin:0 auto;width:996px;height:108px;padding:10px 0;position:relative;}
+
+.tnb .btn-right{
+    position:absolute;
+    top:10px;
+    right:0;
+    width:106px;
+    height:108px;
+}
+
+.tnb .btn-right{
+    background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/tnb/tnb_buttons.png) no-repeat;
+    background-position:0 0;
+    overflow:hidden;
+    text-indent:-1000px;
+}
+
+.tnb .btn-right_on{
+    position:absolute;
+    top:10px;
+    right:0;
+    width:106px;
+    height:108px;
+}
+
+.tnb .btn-right_on{
+    background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/tnb/tnb_buttons.png) no-repeat;
+    background-position:0 0;
+    overflow:hidden;
+    text-indent:-1000px;
+}
+
+.tnb.step2 .btn-right_on{
+    background-position:-150px -220px;
+}
+.tnb.step2 .btn-right{
+    background-position: 0px -220px;
+    pointer-events: none;
+    
+}
+
+.tnb .info{
+    float:left;height:108px;padding-right:2px;
+    background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/tnb/split.png) no-repeat right;
+    position:relative;
+    color:#cccccc;
+    font-size: 12px;
+}
+
+.tnb .info .row{height:20px;line-height:20px;}
+.tnb .info .row:first-child{margin-top:14px;}
+.tnb .info .row.colspan2{height:40px;overflow:hidden;}
+
+.tnb .info .row .header{float:left;padding-left:10px;}
+.tnb .info .row .data{float:right;font-weight:bold;}
+.tnb .info .row .data a{color:#cccccc;}
+
+
+.tnb .info.movie{width:210px;}
+.tnb .info.movie .movie_poster{float:left;width:74px;height:108px;line-height:108px;margin-right:11px;overflow:hidden;}
+.tnb .info.movie .movie_poster img{width:100%;vertical-align:middle;}
+.tnb .info.movie .row .data{width:120px;max-height:40px;}
+
+.tnb .info.theater{width:185px;}
+
+.tnb .info.theater .row .data{width:135px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+
+.tnb .info.seat{width:171px;}
