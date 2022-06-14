@@ -5,27 +5,23 @@ import { useState, useCallback } from "react";
 import ReviewForm from "./ReviewForm";
 import ReviewList from "./ReviewList";
 
-const initData = [
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" },
-    { text: "리액트의 기초 알아보기" }
-];
-
 const open = () => {
     let box = document.querySelector('.reviewForm-container');
     if(box !== null) box.classList.toggle('reviewForm-open');
 }
 
-const Review = () => {
+const Review = ({ movie, commentList }) => {
 
-    const [reviews, setReviews] = useState(initData);
+    const [reviews, setReviews] = useState(commentList[movie.index]);
 
     const onInsert = useCallback(
-        (text) => {
+        (text, rate) => {
             const review = {
-                text,
+                rate: rate,
+                writer: 'test',
+                comment: text,
+                plus: 0,
+                date: '2022.06.15'
             };
             setReviews(reviews.concat(review));
         },

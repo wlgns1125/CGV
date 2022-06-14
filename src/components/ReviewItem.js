@@ -5,10 +5,23 @@ import { useState, useCallback } from "react";
 import ReviewForm from "./ReviewForm";
 import ReviewList from "./ReviewList";
 
+const checkToggle = (isToggled, setIsToggled, plus, setPlus) => {
+    if(isToggled) {
+        setIsToggled(false);
+        setPlus(plus-1);
+    }
+
+    else {
+        setIsToggled(true);
+        setPlus(plus+1);
+    }
+}
+
 
 const ReviewItem = ({ review }) => {
 
-    const { text } = review;
+    const [isToggled, setIsToggled] = useState(review.isToggled);
+    const [plus, setPlus] = useState(review.plus);
 
     return (
         <div className="reviewItem-container">
@@ -19,16 +32,21 @@ const ReviewItem = ({ review }) => {
                 <div className="reviewItem-userInfo">
                     <div className="reviewItem-header">
                         <div className="egg ticketingPercent" />
-                        <span>zabcd121</span>
+                        <span>{review.writer}</span>
+                        <span> / 평점 : {review.rate}</span>
                     </div>
-                    <p>{text}</p>
+                    <p>{review.comment}</p>
                 </div>
             </div>
             <div className="reviewItem-secondRow">
-                <span>2022.06.10</span>
+                <span>{review.date}</span>
                 <span className="reviewItem-bar">|</span>
-                <img src="http://img.cgv.co.kr/R2014/images/point/ico_point_default.png" />
-                <strong>30</strong>
+                <img className="cursorImage" src="http://img.cgv.co.kr/R2014/images/point/ico_point_default.png"  onClick={
+                    () => {
+                        checkToggle(isToggled, setIsToggled, plus, setPlus);
+                    }
+                }/>
+                <strong>{plus}</strong>
             </div>
         </div>
     );
